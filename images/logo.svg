@@ -3,9 +3,9 @@
     text {
       text-shadow: 1px 5px 4px rgba(47,37,15,0.308);
       font-size: 30px;
-      font-family:"Roboto Condensed", Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-family: cursive;
       font-weight: 700;
-      letter-spacing: 0.5rem;
+      letter-spacing: 0.2rem;
       margin: 0;
       padding: 0;
     }
