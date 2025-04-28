@@ -4,7 +4,7 @@ Fonts
 ===============
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
 /*
 =============== 
 Variables
@@ -709,7 +709,62 @@ Skills
 Timeline
 ===============
 */
-
+.timeline {
+  background: var(--clr-primary-10);
+}
+.timeline-center {
+  width: 80vw;
+  max-width: 40rem;
+}
+.timeline-item {
+  border-top: 2px dashed var(--clr-primary-6);
+  margin: 0;
+  padding: 4rem 2rem;
+  position: relative;
+}
+.timeline p {
+  margin-bottom: 0;
+}
+.timeline-item:nth-child(even) {
+  border-left: 2px dashed var(--clr-primary-6);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  margin-right: 2rem;
+  padding-right: 0;
+}
+.timeline-item:nth-child(odd) {
+  border-right: 2px dashed var(--clr-primary-6);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  margin-left: 2rem;
+  padding-left: 0;
+}
+.timeline-item:first-child {
+  border-top: none;
+  border-top-right-radius: 0;
+}
+.timeline-item:last-child {
+  border-bottom-left-radius: 0;
+}
+.number {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  background: var(--clr-primary-10);
+  width: 2rem;
+  padding-inline-start: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: bolder;
+  font-family: "Imperial Script", cursive;
+  font-size: 2rem;
+}
+.timeline-item:nth-child(even) .number {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
 /*
 =============== 
 Blog
